@@ -15,7 +15,6 @@ You will see how to include SCA in your development process.
 ## Enable SCA in your Pipeline
 
   4. In `.github/workflows/sca.yml`, uncomment the block labeled "Version 1" to enable Snyk.
-     * After the next successful run of the GitHub actions, you should now see security issues being reported.
-
-  5. In `requirements.txt`, uncomment the block labeled "Version 2" to pin a transitive dependency of the "requests" library to a newer version.
-    * After the next successful run of the GitHub actions, you should now see fewer  security issues being reported.
+     * After the next successful run of the GitHub actions, under GitHub's "Security Tab", you should now see "Code Scanning Alerts" being reported.
+  5. In `requirements.txt`, update the version of the "requests" library to a newer version (e.g. from `2.27.0` to `2.32.2` -- or whatever Snyk suggests as a current version).
+    * After the next successful run of the GitHub actions, you should now see fewer "Code Scanning Alerts" being reported.

@@ -1,4 +1,4 @@
-name: Snyk SCA
+name: Software Composition Analysis
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: ["main"]
 
 jobs:
-  snyk:
+  sca:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
